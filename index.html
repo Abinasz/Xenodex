@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XENODEX</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    
+    <div class="sidebar">
+
+        <h1 class="logo">᙭EᑎOᗪE᙭</h1>
+        <p class="subtitle">Galactic Species Archive</p>
+
+        <div class="input-group">
+            <label>Planet Type</label>
+            <select id="planetType">
+                <option>Desert</option>
+                <option>Ocean</option>
+                <option>Jungle</option>
+                <option>Frozen</option>
+                <option>Volcanic</option>
+                <option>Gas Giant</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Habitat</label>
+            <select id="habitat">
+                <option>Underground</option>
+                <option>Forest</option>
+                <option>Mountains</option>
+                <option>Sky</option>
+                <option>Ocean</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>IQ Level</label>
+            <select id="iq">
+                <option>Primitive</option>
+                <option>Average</option>
+                <option>Advanced</option>
+                <option>Super Intelligent</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Body Type</label>
+            <select id="body">
+                <option>Bipedal</option>
+                <option>Quadruped</option>
+                <option>Floating</option>
+                <option>Serpentine</option>
+                <option>Insectoid</option>
+            </select>
+        </div>
+
+        <button id="generateBtn" class="generate-btn">
+            ᒪOᑕᗩTE
+        </button>
+
+        <p class="version">
+            Xenodex v1.2 by Abinash
+        </p>
+
+    </div>
+
+    
+    <div class="main-panel">
+
+        <!-- TOP -->
+        <div class="top-section">
+
+            <div class="alien-face">
+
+                <img
+                    id="alienImage"
+                    src=""
+                    alt="Alien"
+                >
+
+            </div>
+
+            <div class="alien-info">
+
+                <h2 id="alienName" class="alien-name">
+                    Alien Name
+                </h2>
+
+                <div class="stats">
+
+                    <div>
+                        <span>Home World:</span>
+                        <span id="homeWorld">—</span>
+                    </div>
+
+                    <div>
+                        <span>Life Span:</span>
+                        <span id="lifeSpan">—</span>
+                    </div>
+
+                    <div>
+                        <span>Threat Level:</span>
+                        <span id="threatLevel">—</span>
+                    </div>
+
+                    <div>
+                        <span>Body Type:</span>
+                        <span id="bodyTypeText">—</span>
+                    </div>
+
+                    <div>
+                        <span>Special Trait:</span>
+                        <span id="specialTrait">—</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="planet-image">
+
+                <img
+                    id="planetImage"
+                    src=""
+                    alt="Planet"
+                >
+
+            </div>
+
+        </div>
+
+        
+        <div class="bottom-section">
+
+            <div class="description-box">
+
+                <h2>Description</h2>
+
+                <p id="description">
+                    Species description will appear here...
+                </p>
+
+            </div>
+
+            <div class="culture-box">
+
+                <h2>Biology & Culture</h2>
+
+                <p id="culture">
+                    Biology and culture information will appear here...
+                </p>
+
+            </div>
+
+        </div>
+
+        
+        <div class="saying-box">
+
+            <p id="quote" class="planet-saying">
+                "A famous quote from this species will appear here."
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
