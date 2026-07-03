@@ -1,0 +1,667 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:#000;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    min-height:100vh;
+
+    padding:18px;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+    width:270px;
+
+    height:96vh;
+
+    background:#F6ECD4;
+
+    border-radius:35px;
+
+    padding:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.18);
+
+    transition:.35s;
+}
+
+.sidebar:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.22);
+
+}
+
+/* Header */
+
+.logo{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:#11cc66;
+
+    text-align:center;
+
+    margin-bottom:6px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-bottom:45px;
+
+}
+
+/* Inputs */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#222;
+
+}
+
+select{
+
+    width:100%;
+
+    padding:13px;
+
+    border-radius:15px;
+
+    border:2px solid #222;
+
+    background:white;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+select:hover{
+
+    border-color:#00d26a;
+
+}
+
+select:focus{
+
+    outline:none;
+
+    border-color:#00d26a;
+
+    box-shadow:0 0 15px rgba(0,210,106,.35);
+
+}
+
+/* Button */
+
+.generate-btn{
+
+    margin-top:20px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#10d15e;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 6px 18px rgba(0,200,90,.35);
+
+}
+
+.generate-btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#0bb453;
+
+    box-shadow:
+        0 12px 30px rgba(0,200,90,.55);
+
+}
+
+.generate-btn:active{
+
+    transform:scale(.97);
+
+}
+
+.generate-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#0ab453;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+/* Footer */
+
+.version{
+
+    margin-top:auto;
+
+    text-align:center;
+
+    color:#8d816f;
+
+    font-size:14px;
+
+    line-height:22px;
+
+}
+
+.logo{
+
+    font-size:42px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#10d15e;
+
+    text-align:center;
+    margin-bottom:8px;
+
+    -webkit-text-stroke:2px black;
+
+    text-shadow:
+        2px 2px 0 black,
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.sidebar{
+
+    animation:fadeIn .8s ease;
+}
+
+
+/* Whole Page */
+
+body{
+    margin:0;
+    background:#000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display:flex;
+    gap:25px;
+    width:100%;
+    min-height:100vh;
+    padding:18px;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   MAIN PANEL
+=========================== */
+
+.main-panel{
+
+    flex:1;
+
+    background:#f5ebd6;
+
+    border-radius:35px;
+
+    padding:28px;
+
+}
+
+/* Top Row */
+
+.top-section{
+
+    display:flex;
+
+    gap:28px;
+
+    align-items:flex-start;
+
+}
+
+/* Alien Face */
+
+.alien-face{
+
+    width:220px;
+
+    height:220px;
+
+    border:2px solid #111;
+
+    border-radius:30px;
+
+    background:#b4a27c;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+}
+
+/* Alien Info */
+
+.alien-info{
+
+    flex:1;
+
+    height:220px;
+
+    border:2px solid #111;
+
+    border-radius:30px;
+
+    background:#f8efd9;
+
+    padding:24px;
+
+}
+
+/* Planet Image */
+
+.planet-image{
+
+    width:470px;
+
+    height:220px;
+
+    border:2px solid #111;
+
+    border-radius:30px;
+
+    background:#b4a27c;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+}
+
+.alien-name{
+    margin-top:-8px;
+    margin-bottom:12px;
+    font-size:32px;
+}
+
+/* ===========================
+   Bottom Section
+=========================== */
+
+.bottom-section{
+
+    display:flex;
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+/* Description */
+
+.description-box{
+
+    flex:1;
+
+    height:340px;
+
+    background:#f8efd9;
+
+    border:2px solid #111;
+
+    border-radius:25px;
+
+    padding:18px;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:#000000 transparent;
+
+    scrollbar-gutter:stable;
+
+    padding-right:12px;
+
+}
+
+.description-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.description-box h2{
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.description-box p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#333;
+
+}
+
+/* Biology & Culture */
+
+.culture-box{
+
+    flex:1;
+
+    height:340px;
+
+    background:#f8efd9;
+
+    border:2px solid #111;
+
+    border-radius:25px;
+
+    padding:18px;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:#000000 transparent;
+
+    scrollbar-gutter:stable;
+
+    padding-right:12px;
+
+}
+
+.culture-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.culture-box h2{
+
+    font-size:28px;
+
+    margin-bottom:18px;
+
+}
+
+.culture-box p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#333;
+
+}
+
+/* Home Planet Saying */
+
+.saying-box{
+
+margin-top:22px;
+
+    height:58px;
+
+    background:#f8efd9;
+
+    border:2px solid #111;
+
+    border-radius:14px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:0 25px;
+
+    overflow:hidden;
+
+}
+
+.saying-box:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.saying-box h2{
+
+    font-size:28px;
+
+    margin-bottom:12px;
+
+}
+
+.saying-box p{
+
+    font-size:22px;
+
+    font-style:italic;
+
+    color:#3d3d3d;
+
+}
+
+.planet-saying{
+
+    font-size:24px;
+
+    font-style:italic;
+
+    font-weight:600;
+
+    color:#00a35a;
+
+    text-shadow:
+        1px 1px #24f508;
+
+    text-align:center;
+
+}
+
+.generate-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-140%;
+
+    width:60px;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(86, 253, 31, 0.75),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    animation:scannerLight 4s linear infinite;
+
+}
+
+@keyframes scannerLight{
+
+    0%{
+
+        left:-140%;
+
+    }
+
+    20%{
+
+        left:140%;
+
+    }
+
+    100%{
+
+        left:140%;
+
+    }
+
+}
+
+.description-box::-webkit-scrollbar-button:single-button,
+.culture-box::-webkit-scrollbar-button:single-button{
+    display:none;
+    width:0;
+    height:0;
+}
+
+::-webkit-scrollbar-button{
+    display:none;
+    width:0;
+    height:0;
+}
+
+.alien-face img,
+.planet-image img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:28px;
+
+}
+
+.alien-face,
+.planet-image {
+    overflow: hidden;
+    position: relative;
+}
+
+.alien-face img,
+.planet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 28px;
+}
+.top-section {
+    align-items: stretch;
+}
